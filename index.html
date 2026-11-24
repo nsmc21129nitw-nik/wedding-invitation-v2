@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Savita &amp; Shivam · Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Tiro+Devanagari+Hindi:ital@0;1&family=Josefin+Sans:wght@400;600&display=swap">
+<style>
+:root{--bg:#fbf1dc;--ink:#5b1c2a;--gold:#b98a3e;--soft:#8a5a3b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d0f12}}
+:root[data-theme="dark"]{--bg:#1d0f12}
+html{scroll-snap-type:y proximity;scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font-family:"Cormorant Garamond","Tiro Devanagari Hindi",Georgia,serif;overflow-x:hidden}
+body.lock{overflow:hidden}
+canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:5}
+section{min-height:100svh;scroll-snap-align:start;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:56px 24px;position:relative;overflow:hidden}
+.script{font-family:"Great Vibes","Tiro Devanagari Hindi","Brush Script MT",cursive;font-weight:400}
+.cap{font-family:"Josefin Sans","Tiro Devanagari Hindi",Arial,sans-serif;letter-spacing:.3em;text-transform:uppercase;font-size:.78rem}
+html[lang=hi] .cap,html[lang=hi] .mo,html[lang=hi] .pill,html[lang=hi] .cdr span{letter-spacing:0;font-family:"Tiro Devanagari Hindi",serif;text-transform:none}
+html[lang=hi] .script{font-family:"Tiro Devanagari Hindi",serif;font-style:italic}
+.rv{opacity:0;transform:translateY(34px);transition:opacity 1.1s ease,transform 1.1s ease}
+.rv.in{opacity:1;transform:none}.d1{transition-delay:.2s}.d2{transition-delay:.4s}.d3{transition-delay:.6s}
+.mantra{font-family:"Tiro Devanagari Hindi",serif;line-height:1.9;color:#7a1f2e}
+.hero{background:radial-gradient(ellipse at 50% 30%,#fff3d0,#f4c98a 60%,#e5a76a)}
+.hero::before,.hero::after{content:"";position:absolute;left:14px;right:14px;border:1.5px solid var(--gold);pointer-events:none}
+.hero::before{top:14px;bottom:14px;border-radius:220px 220px 14px 14px}
+.hero::after{top:22px;bottom:22px;border-radius:212px 212px 8px 8px;opacity:.5}
+.shubh{font-family:"Tiro Devanagari Hindi",serif;font-size:clamp(3rem,15vw,5.2rem);line-height:1.15}
+.hero .mantra{font-size:clamp(1.15rem,5.2vw,1.55rem);margin-top:30px;max-width:21rem}
+.bells{position:absolute;top:60px;left:0;right:0;display:flex;justify-content:center;gap:34px}
+.bells i{width:2px;height:70px;background:linear-gradient(#e6a817,#b98a3e);position:relative;transform-origin:top;animation:sw 3.2s ease-in-out infinite}
+.bells i::after{content:"";position:absolute;bottom:-14px;left:-9px;width:20px;height:18px;background:#c9972f;border-radius:50% 50% 4px 4px/70% 70% 4px 4px}
+.bells i:nth-child(2){height:100px;animation-delay:.5s}.bells i:nth-child(3){animation-delay:1s}
+@keyframes sw{50%{transform:rotate(7deg)}0%,100%{transform:rotate(-7deg)}}
+.hint{position:absolute;bottom:42px;animation:bob 1.8s infinite;color:var(--soft)}
+@keyframes bob{50%{transform:translateY(8px)}}
+.names{background:linear-gradient(180deg,#e5a76a,#fbe8c4 30%,#fff6e0)}
+.om{font-size:3.2rem;color:var(--gold);line-height:1}
+.names p.lead{max-width:22rem;font-size:1.3rem;margin:14px 0 6px;color:#6b3b2a;line-height:1.5}
+.nm{font-size:clamp(3.8rem,18vw,6rem);line-height:1.1;color:#8a4b2c;text-shadow:0 2px 0 #fff8}
+html[lang=hi] .nm{font-size:clamp(3rem,14vw,4.6rem)}
+.amp{font-size:2.6rem;color:var(--gold)}
+.names .mantra{font-size:clamp(1.05rem,4.6vw,1.3rem);max-width:22rem;margin-top:6px}
+.hr2{width:140px;height:2px;margin:16px auto;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.ev{color:#fff}
+.arch{background:#fff7e3;color:#5b1c2a;border:3px solid var(--gold);border-radius:150px 150px 22px 22px;padding:54px 30px 36px;width:min(92%,340px);box-shadow:0 0 0 8px #ffffff22,0 18px 50px #0006}
+.arch h2{font-size:2.8rem;line-height:1.1;margin-bottom:10px}
+html[lang=hi] .arch h2{font-size:2.3rem}
+.arch .big{font-size:4.4rem;font-weight:600;line-height:1;margin:6px 0}
+.arch .mo{font-family:"Josefin Sans","Tiro Devanagari Hindi",sans-serif;letter-spacing:.3em;font-size:.85rem}
+.arch .t{margin-top:14px;font-size:1.25rem;line-height:1.5}
+.arch hr{border:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:14px 0}
+.haldi{background:linear-gradient(135deg,#f5b800,#e08e00 45%,#2f5d3a 46%,#1c4527)}
+.sangeet{background:radial-gradient(circle at 30% 20%,#e07a8a,#b04564 55%,#7a2a45)}
+.wed{background:radial-gradient(circle at 50% 10%,#f0662f,#c8281c 60%,#8d1414)}
+.icon{font-size:2.2rem;margin-bottom:6px}
+.pill{display:inline-block;margin-top:18px;padding:11px 22px;border:1.5px solid var(--gold);border-radius:99px;color:#5b1c2a;text-decoration:none;font-family:"Josefin Sans","Tiro Devanagari Hindi",sans-serif;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;background:#fff9;transition:.3s;cursor:pointer}
+.pill:hover{background:var(--gold);color:#fff}
+.cd{background:#2a0f16;color:#f7dfae}
+.cd h3{font-size:3rem;color:#f2c76a}
+.cdr{display:flex;gap:12px;margin:26px 0 8px}
+.cdr div{width:70px;padding:14px 0;border:1px solid #f2c76a66;border-radius:14px;background:#ffffff0a}
+.cdr b{display:block;font:600 2rem "Cormorant Garamond","Tiro Devanagari Hindi",serif}
+.cdr span{font:.6rem "Josefin Sans",sans-serif;letter-spacing:.2em;text-transform:uppercase;opacity:.8}
+html[lang=hi] .cdr span{font-size:.75rem}
+.end{background:radial-gradient(ellipse at 50% 0,#fff8e8,#fbe9c6);color:#7a1f2e}
+.end h2{font-size:clamp(2.4rem,11vw,3.6rem);line-height:1.2}
+.end p{font-size:1.3rem;line-height:1.7;margin:8px 0;max-width:22rem}
+.sign{font-size:3.4rem;margin-top:6px;color:#8a4b2c}
+.wish{margin-top:18px;padding:15px 30px;border:0;border-radius:99px;background:linear-gradient(135deg,#d6405a,#a31d3d);color:#fff;font:600 1.1rem "Cormorant Garamond","Tiro Devanagari Hindi",serif;box-shadow:0 8px 24px #a31d3d66;cursor:pointer;transition:.3s}
+.wish:hover:not(:disabled){transform:scale(1.05)}
+.wish:disabled{background:linear-gradient(135deg,#6f8f5a,#46683a);box-shadow:none;cursor:default}
+.live{margin-top:14px;font:.85rem "Josefin Sans","Tiro Devanagari Hindi",sans-serif;color:#7a1f2e;display:flex;align-items:center;gap:8px;justify-content:center}
+.live i{width:9px;height:9px;border-radius:50%;background:#e02b2b;animation:pl 1.4s infinite}
+@keyframes pl{50%{opacity:.25;transform:scale(1.5)}}
+.live b{font-size:1.15rem}
+.dots{position:fixed;right:10px;top:50%;transform:translateY(-50%);z-index:9;display:flex;flex-direction:column;gap:10px}
+.dots a{width:8px;height:8px;border-radius:50%;background:#b98a3eaa;border:1px solid #fff8}
+.dots a.on{background:#b98a3e;transform:scale(1.5)}
+.bar{position:fixed;top:calc(env(safe-area-inset-top,0px) + 10px);left:12px;right:12px;display:flex;justify-content:space-between;z-index:20;pointer-events:none}
+.bar>*{pointer-events:auto}
+.bar select,.bar button{height:34px;border-radius:99px;border:1px solid var(--gold);background:#fff9e8ee;color:#5b1c2a;font:600 .85rem "Josefin Sans","Tiro Devanagari Hindi",sans-serif;padding:0 12px;cursor:pointer}
+.bar button{width:34px;padding:0;font-size:1rem}
+.splash{position:fixed;inset:0;z-index:50;background:radial-gradient(ellipse at 50% 30%,#fff3d0,#f0b878 65%,#c9782f);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;padding:24px;transition:opacity .8s,visibility .8s}
+.splash.off{opacity:0;visibility:hidden}
+.splash .nm{font-size:3.6rem;line-height:1.1}
+.splash .pill{margin:6px 0 0;min-width:190px;font-size:.9rem;padding:13px 22px;border:1.5px solid var(--gold);letter-spacing:.12em}
+@media (prefers-reduced-motion:reduce){.rv{transition:none;opacity:1;transform:none}.bells i,.hint,.live i{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body class="lock">
+<canvas id="p"></canvas>
+<nav class="dots" id="dots"></nav>
+
+<div class="bar">
+  <select id="lang" aria-label="Language"><option value="en">English</option><option value="hi">हिन्दी</option></select>
+  <button id="mus" aria-label="Music" style="display:none">🔊</button>
+</div>
+
+<div class="splash" id="splash">
+  <div class="om">ॐ</div>
+  <div class="mantra" style="font-size:1.2rem">श्री गणेशाय नमः</div>
+  <div class="nm script">Savita<br><span class="amp">&amp;</span> Shivam</div>
+  <p class="cap" style="margin:4px 0 10px">Wedding Invitation · शुभ विवाह</p>
+  <button class="pill" data-go="en">Open in English</button>
+  <button class="pill" data-go="hi">हिन्दी में खोलें</button>
+</div>
+
+<section class="hero" id="s0">
+  <div class="bells"><i></i><i></i><i></i></div>
+  <div class="shubh rv">शुभ विवाह</div>
+  <p class="mantra rv d1">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।<br>निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</p>
+  <div class="hint cap" data-k="scroll"></div>
+</section>
+
+<section class="names" id="s1">
+  <div class="om rv">ॐ</div>
+  <p class="lead rv d1" data-k="lead"></p>
+  <div class="nm script rv d2" data-k="n1"></div>
+  <div class="amp script rv d2" data-k="amp"></div>
+  <div class="nm script rv d3" data-k="n2"></div>
+  <div class="hr2"></div>
+  <p class="mantra rv d3">मङ्गलम् भगवान विष्णुः, मङ्गलम् गरुणध्वजः।<br>मङ्गलम् पुण्डरी काक्षः, मङ्गलाय तनो हरिः॥</p>
+</section>
+
+<section class="ev haldi" id="s2">
+  <div class="arch rv">
+    <div class="icon">🌼</div>
+    <h2 class="script" data-k="haldi"></h2>
+    <hr><div class="mo" data-k="nov"></div><div class="big" data-k="d30"></div>
+    <p class="t" data-k="haldiT"></p>
+  </div>
+</section>
+
+<section class="ev sangeet" id="s3">
+  <div class="arch rv">
+    <div class="icon">🪔</div>
+    <h2 class="script" data-k="sang"></h2>
+    <hr><div class="mo" data-k="dec"></div><div class="big" data-k="d1"></div>
+    <p class="t" data-k="sangT"></p>
+    <p class="t" style="font-size:1.05rem" data-k="sangS"></p>
+  </div>
+</section>
+
+<section class="ev wed" id="s4">
+  <div class="arch rv">
+    <div class="icon">💍</div>
+    <h2 class="script" data-k="wed"></h2>
+    <hr><div class="mo" data-k="dec"></div><div class="big" data-k="d2"></div>
+    <p class="t" data-k="wedT"></p>
+    <a class="pill" id="map" target="_blank" rel="noopener" data-k="map"></a>
+  </div>
+</section>
+
+<section class="cd" id="s5">
+  <p class="cap rv" data-k="cdA"></p>
+  <h3 class="script rv d1" data-k="cdB"></h3>
+  <div class="cdr rv d2"><div><b id="dd">--</b><span data-k="days"></span></div><div><b id="hh">--</b><span data-k="hrs"></span></div><div><b id="mm">--</b><span data-k="min"></span></div><div><b id="ss">--</b><span data-k="sec"></span></div></div>
+  <a class="pill rv d3" id="cal" style="color:#f7dfae;background:#fff1" target="_blank" rel="noopener" data-k="cal"></a>
+</section>
+
+<section class="end" id="s6">
+  <div class="om rv">ॐ</div>
+  <h2 class="rv d1" data-k="join"></h2>
+  <div class="hr2"></div>
+  <p class="rv d2" data-k="pres"></p>
+  <p class="rv d2"><em data-k="delight"></em></p>
+  <div class="hr2"></div>
+  <p class="rv d3" data-k="love"></p>
+  <div class="sign script rv d3" data-k="sign"></div>
+  <p class="cap rv d3" style="font-size:.7rem;margin-top:10px;color:var(--soft)" data-k="fam"></p>
+  <button class="wish rv d3" id="wish"></button>
+  <div class="live rv d3"><i></i><span id="wc"></span></div>
+</section>
+
+<script>
+var T={
+en:{scroll:"Scroll ↓",lead:"With the blessings of God and our loved ones, we are delighted to invite you to the wedding celebrations of",n1:"Savita",amp:"&amp;",n2:"Shivam",
+haldi:"Haldi<br>Mehndi<br>Ceremony",nov:"NOVEMBER",dec:"DECEMBER",d30:"30",d1:"1",d2:"2",
+haldiT:"Wear your brightest yellows &amp; greens<br><em>Venue &amp; time shared by the family</em>",
+sang:"Sangeet",sangT:"4:00 PM onwards<br><em>Own Residence</em>",sangS:"An evening of music, dance &amp; joy",
+wed:"Wedding<br>Ceremony",wedT:"<b>8:00 PM</b><br>Alice Green<br>Dohra Road, Bareilly",map:"View on map",
+cdA:"Counting down to",cdB:"Our Big Day",days:"Days",hrs:"Hours",min:"Mins",sec:"Secs",cal:"Add to calendar",
+join:"Please join us for<br>their <span class=\"script\" style=\"font-size:1.3em\">Big Day!</span>",
+pres:"Your presence will make our celebration even more special.",delight:"We will be delighted to have you with us!",
+love:"With love,",sign:"Savita &amp; Shivam",fam:"&amp; Families",wish:"💐 Send your wishes",wished:"✓ Wished — thank you!",wc:"Wishes received: <b>{n}</b> · live",
+calT:"Savita & Shivam Wedding",loc:"Alice Green, Dohra Road, Bareilly"},
+hi:{scroll:"नीचे देखें ↓",lead:"ईश्वर और अपने प्रियजनों के आशीर्वाद से, हमें आपको विवाह उत्सव में सादर आमंत्रित करते हुए अत्यंत हर्ष हो रहा है",n1:"सविता",amp:"और",n2:"शिवम",
+haldi:"हल्दी<br>मेहंदी<br>समारोह",nov:"नवंबर",dec:"दिसंबर",d30:"३०",d1:"१",d2:"२",
+haldiT:"पीले और हरे रंग पहनकर पधारें<br><em>स्थान और समय परिवार द्वारा बताया जाएगा</em>",
+sang:"संगीत",sangT:"शाम ४:०० बजे से<br><em>अपने निवास पर</em>",sangS:"संगीत, नृत्य और उल्लास की एक शाम",
+wed:"विवाह<br>समारोह",wedT:"<b>रात्रि ८:०० बजे</b><br>ऐलिस ग्रीन<br>दोहरा रोड, बरेली",map:"नक्शे में देखें",
+cdA:"उलटी गिनती",cdB:"हमारा शुभ दिन",days:"दिन",hrs:"घंटे",min:"मिनट",sec:"सेकंड",cal:"कैलेंडर में जोड़ें",
+join:"आप सादर आमंत्रित हैं<br>उनके <span class=\"script\" style=\"font-size:1.1em\">शुभ दिन पर!</span>",
+pres:"आपकी उपस्थिति हमारे उत्सव को और भी विशेष बना देगी।",delight:"आपका साथ पाकर हमें अत्यंत प्रसन्नता होगी!",
+love:"स्नेह सहित,",sign:"सविता और शिवम",fam:"एवं परिवारजन",wish:"💐 शुभकामनाएँ भेजें",wished:"✓ शुभकामनाएँ भेजी गईं — धन्यवाद!",wc:"प्राप्त शुभकामनाएँ: <b>{n}</b> · लाइव",
+calT:"सविता और शिवम का विवाह",loc:"ऐलिस ग्रीन, दोहरा रोड, बरेली"}};
+var L="en",$=function(i){return document.getElementById(i)},
+LS={g:function(k){try{return localStorage.getItem(k)}catch(e){return null}},s:function(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+function num(n){n=String(n);return L==="hi"?n.replace(/\d/g,function(d){return"०१२३४५६७८९"[d]}):n}
+
+// ---- music (put the two mp3 files next to index.html) ----
+var A={en:new Audio("la-vie-elegante.mp3"),hi:new Audio("rajwadi-vandhan.mp3")},musicOn=false;
+["en","hi"].forEach(function(k){A[k].loop=true;A[k].volume=.55;A[k].preload="none";A[k].addEventListener("error",function(){A[k].bad=true;if(k===L)$("mus").style.display="none"})});
+function playNow(){var o=L==="en"?"hi":"en";A[o].pause();var m=$("mus");if(A[L].bad){m.style.display="none";return}m.style.display="";m.textContent=musicOn?"🔊":"🔇";if(musicOn)A[L].play().catch(function(){})else A[L].pause()}
+$("mus").onclick=function(){musicOn=!musicOn;playNow()};
+
+// ---- language ----
+function setLang(l){L=l;document.documentElement.lang=l;$("lang").value=l;LS.s("lang",l);
+ [].forEach.call(document.querySelectorAll("[data-k]"),function(e){e.innerHTML=T[l][e.dataset.k]});
+ $("map").href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent("Alice Green Dohra Road Bareilly");
+ $("cal").href="https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(T[l].calT)+"&dates=20261202T200000/20261202T235900&ctz=Asia/Kolkata&location="+encodeURIComponent(T[l].loc);
+ renderWish();tick();playNow()}
+$("lang").onchange=function(){setLang(this.value)};
+[].forEach.call(document.querySelectorAll("[data-go]"),function(b){b.onclick=function(){musicOn=true;setLang(b.dataset.go);$("splash").classList.add("off");document.body.classList.remove("lock")}});
+
+// ---- live wishes (free shared counter; polls every 8s) ----
+var API="https://abacus.jasoncameron.dev",NS="savita-shivam-wedding-2026",KEY="wishes",count=null;
+function renderWish(){var w=LS.g("wished")==="1",b=$("wish");b.disabled=w;b.innerHTML=T[L][w?"wished":"wish"];$("wc").innerHTML=T[L].wc.replace("{n}",count===null?"…":num(count))}
+function getCount(){fetch(API+"/get/"+NS+"/"+KEY).then(function(r){return r.ok?r.json():{value:0}}).then(function(j){count=j.value||0;renderWish()}).catch(function(){})}
+function sendWish(){return fetch(API+"/hit/"+NS+"/"+KEY).then(function(r){return r.json()}).then(function(j){count=j.value;LS.s("pending","0");renderWish()})}
+$("wish").onclick=function(){if(LS.g("wished")==="1")return;LS.s("wished","1");LS.s("pending","1");count=(count||0)+1;renderWish();burst();sendWish().catch(function(){})};
+if(LS.g("pending")==="1")sendWish().catch(function(){});
+getCount();setInterval(getCount,8000);
+
+// ---- reveal, dots ----
+var secs=[].slice.call(document.querySelectorAll("section")),dots=$("dots");
+secs.forEach(function(s,i){var a=document.createElement("a");a.href="#s"+i;a.setAttribute("aria-label","Section "+(i+1));dots.appendChild(a)});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.querySelectorAll(".rv").forEach(function(r){r.classList.add("in")});var i=secs.indexOf(e.target);[].forEach.call(dots.children,function(d,j){d.classList.toggle("on",i===j)})}})},{threshold:.4});
+secs.forEach(function(s){io.observe(s)});
+
+// ---- countdown (2 Dec 2026, 8 PM IST) ----
+var TT=new Date("2026-12-02T20:00:00+05:30").getTime();
+function tick(){var d=Math.max(0,TT-Date.now()),p=function(n){return num(String(n).padStart(2,"0"))};
+$("dd").textContent=num(Math.floor(d/864e5));$("hh").textContent=p(Math.floor(d%864e5/36e5));$("mm").textContent=p(Math.floor(d%36e5/6e4));$("ss").textContent=p(Math.floor(d%6e4/1e3))}
+setInterval(tick,1000);
+
+// ---- petals + wish burst ----
+var c=$("p"),x=c.getContext("2d"),W,H,P=[],B=[],cols=["#f6b93b","#e84a5f","#ff9a76","#ffd36b","#f4a6b8"];
+function rs(){W=c.width=innerWidth;H=c.height=innerHeight}rs();addEventListener("resize",rs);
+for(var i=0;i<26;i++)P.push({x:Math.random()*2000,y:Math.random()*1200,r:4+Math.random()*6,s:.4+Math.random()*.9,w:Math.random()*6,c:cols[i%5]});
+function burst(){var r=$("wish").getBoundingClientRect();for(var i=0;i<60;i++)B.push({x:r.left+r.width/2,y:r.top+r.height/2,vx:(Math.random()-.5)*9,vy:-Math.random()*10-3,r:4+Math.random()*6,l:1,w:Math.random()*6,c:cols[i%5]})}
+(function f(){x.clearRect(0,0,W,H);var still=matchMedia("(prefers-reduced-motion:reduce)").matches;
+if(!still)P.forEach(function(p){p.y+=p.s;p.w+=.02;p.x+=Math.sin(p.w)*.7;if(p.y>H+10){p.y=-10;p.x=Math.random()*W}pet(p.x%W,p.y,p.r,p.w,p.c,.75)});
+B=B.filter(function(b){b.x+=b.vx;b.y+=b.vy;b.vy+=.28;b.w+=.15;b.l-=.012;if(b.l>0)pet(b.x,b.y,b.r,b.w,b.c,b.l);return b.l>0});
+requestAnimationFrame(f)})();
+function pet(px,py,r,w,col,a){x.save();x.translate(px,py);x.rotate(w);x.globalAlpha=a;x.fillStyle=col;x.beginPath();x.ellipse(0,0,r,r*.55,0,0,6.3);x.fill();x.restore()}
+
+setLang("en");
+</script>
+</body>
+</html>
